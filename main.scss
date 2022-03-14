@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900);
+
+// Colors
+// --- Primary
+
+$softBlue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+
+// --- Neutral
+
+$mainBg: hsl(217, 54%, 11%);
+$cardBg: hsl(216, 50%, 16%);
+$line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+// Fonts
+$font-stack: "Outfit", sans-serif;
+
+// Spaces
+$small-space: 25px;
+
+// -----------------
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  background-color: $mainBg;
+  font-family: $font-stack;
+  & p {
+    font-size: 18px;
+  }
+}
+
+.card-container {
+  margin: 20vh auto;
+  width: 1440px;
+
+  &__card {
+    width: 350px;
+    margin: 0 auto;
+    background-color: $cardBg;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    &__image-ctn {
+      & img {
+        border-radius: 10px;
+        max-width: 100%;
+      }
+    }
+
+    &__info-ctn {
+      padding: $small-space 0;
+      border-bottom: 1px solid $line;
+      &__name {
+        color: $white;
+        font-weight: 500;
+        font-size: 22px;
+        padding-bottom: $small-space;
+
+        & a {
+          color: $white;
+          text-decoration: none;
+          &:hover {
+            color: $cyan;
+          }
+        }
+      }
+
+      &__desc {
+        color: $softBlue;
+        padding-bottom: $small-space;
+
+        &__more-info {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          &__price {
+            font-weight: 600;
+            color: $cyan;
+            display: flex;
+            align-items: center;
+            & img {
+              padding-right: 8px;
+            }
+          }
+
+          &__timing {
+            color: $softBlue;
+            display: flex;
+            align-items: center;
+            & img {
+              padding-right: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    &__footer-ctn {
+      padding-top: $small-space;
+      color: $softBlue;
+      display: grid;
+      grid-template-columns: 1fr 6fr;
+      column-gap: $small-space;
+
+      &__creator-img img {
+        max-width: 100%;
+        border: 1px solid $softBlue;
+        border-radius: 50%;
+      }
+
+      &__creator-name {
+        align-self: center;
+        & a {
+          color: $white;
+          text-decoration: none;
+          &:hover {
+            color: $cyan;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 15px;
+}
+
+.attribution {
+  color: $white;
+  font-size: 11px;
+  & a {
+    color: $white;
+  }
+}

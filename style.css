@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0 auto;
+  background-color: #0d192b;
+  font-family: "Outfit", sans-serif; }
+  body p {
+    font-size: 18px; }
+
+.card-container {
+  margin: 20vh auto;
+  width: 1440px; }
+  .card-container__card {
+    width: 350px;
+    margin: 0 auto;
+    background-color: #14253d;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; }
+    .card-container__card__image-ctn img {
+      border-radius: 10px;
+      max-width: 100%; }
+    .card-container__card__info-ctn {
+      padding: 25px 0;
+      border-bottom: 1px solid #2f415b; }
+      .card-container__card__info-ctn__name {
+        color: white;
+        font-weight: 500;
+        font-size: 22px;
+        padding-bottom: 25px; }
+        .card-container__card__info-ctn__name a {
+          color: white;
+          text-decoration: none; }
+          .card-container__card__info-ctn__name a:hover {
+            color: #00fff7; }
+      .card-container__card__info-ctn__desc {
+        color: #8bacda;
+        padding-bottom: 25px; }
+        .card-container__card__info-ctn__desc__more-info {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center; }
+          .card-container__card__info-ctn__desc__more-info__price {
+            font-weight: 600;
+            color: #00fff7;
+            display: flex;
+            align-items: center; }
+            .card-container__card__info-ctn__desc__more-info__price img {
+              padding-right: 8px; }
+          .card-container__card__info-ctn__desc__more-info__timing {
+            color: #8bacda;
+            display: flex;
+            align-items: center; }
+            .card-container__card__info-ctn__desc__more-info__timing img {
+              padding-right: 8px; }
+    .card-container__card__footer-ctn {
+      padding-top: 25px;
+      color: #8bacda;
+      display: grid;
+      grid-template-columns: 1fr 6fr;
+      column-gap: 25px; }
+      .card-container__card__footer-ctn__creator-img img {
+        max-width: 100%;
+        border: 1px solid #8bacda;
+        border-radius: 50%; }
+      .card-container__card__footer-ctn__creator-name {
+        align-self: center; }
+        .card-container__card__footer-ctn__creator-name a {
+          color: white;
+          text-decoration: none; }
+          .card-container__card__footer-ctn__creator-name a:hover {
+            color: #00fff7; }
+
+.footer {
+  position: fixed;
+  bottom: 15px; }
+
+.attribution {
+  color: white;
+  font-size: 11px; }
+  .attribution a {
+    color: white; }
+
+/*# sourceMappingURL=style.css.map */
