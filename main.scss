@@ -41,7 +41,7 @@ body {
 
 .card-container {
   margin: 20vh auto;
-  width: 1440px;
+  //   width: 1440px;
 
   &__card {
     width: 350px;
@@ -172,6 +172,11 @@ body {
 .footer {
   position: fixed;
   bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .attribution {

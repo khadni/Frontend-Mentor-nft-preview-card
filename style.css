@@ -14,8 +14,7 @@ body {
     font-size: 18px; }
 
 .card-container {
-  margin: 20vh auto;
-  width: 1440px; }
+  margin: 20vh auto; }
   .card-container__card {
     width: 350px;
     margin: 0 auto;
@@ -110,7 +109,12 @@ body {
 
 .footer {
   position: fixed;
-  bottom: 15px; }
+  bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center; }
 
 .attribution {
   color: white;
