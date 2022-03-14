@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900);
 * {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
@@ -22,9 +24,32 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column; }
-    .card-container__card__image-ctn img {
-      border-radius: 10px;
-      max-width: 100%; }
+    .card-container__card__image-ctn {
+      position: relative; }
+      .card-container__card__image-ctn img {
+        border-radius: 10px;
+        max-width: 100%; }
+      .card-container__card__image-ctn__mid {
+        background: rgba(0, 255, 247, 0.4);
+        position: absolute;
+        height: 99%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s;
+        border-radius: 10px; }
+        .card-container__card__image-ctn__mid img {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%); }
+      .card-container__card__image-ctn:hover .card-container__card__image-ctn__mid {
+        opacity: 1; }
     .card-container__card__info-ctn {
       padding: 25px 0;
       border-bottom: 1px solid #2f415b; }
@@ -35,7 +60,10 @@ body {
         padding-bottom: 25px; }
         .card-container__card__info-ctn__name a {
           color: white;
-          text-decoration: none; }
+          text-decoration: none;
+          -webkit-transition: all 0.4s ease-in-out 0s;
+          -moz-transition: all 0.4s ease-in-out 0s;
+          transition: all 0.4s ease-in-out 0s; }
           .card-container__card__info-ctn__name a:hover {
             color: #00fff7; }
       .card-container__card__info-ctn__desc {
@@ -73,7 +101,10 @@ body {
         align-self: center; }
         .card-container__card__footer-ctn__creator-name a {
           color: white;
-          text-decoration: none; }
+          text-decoration: none;
+          -webkit-transition: all 0.4s ease-in-out 0s;
+          -moz-transition: all 0.4s ease-in-out 0s;
+          transition: all 0.4s ease-in-out 0s; }
           .card-container__card__footer-ctn__creator-name a:hover {
             color: #00fff7; }
 
